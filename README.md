@@ -1,36 +1,150 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DeanWaringDev - Professional Software Development Website
 
-## Getting Started
+A professional business website showcasing software development services, built with accessibility and code quality as top priorities.
 
-First, run the development server:
+## 🎯 Project Goals
+
+This website serves as the digital presence for DeanWaringDev, a professional software development business launching April 1, 2026. The site demonstrates:
+
+- **Accessibility Excellence**: WCAG AAA compliant
+- **Code Quality**: Clean, well-commented, maintainable code
+- **Professional Design**: Modern, minimal design with brand identity
+- **Performance**: Optimized for speed and SEO
+
+## 🚀 Tech Stack
+
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Fonts**: Inter (body), Poppins (headings)
+- **Deployment**: Vercel
+- **Version Control**: Git/GitHub
+
+## 🎨 Brand Colors
+
+- **Primary Navy**: `#0B1D39` - Main brand color, backgrounds, headers
+- **Primary Orange**: `#F97A20` - Accent color, CTAs, highlights
+- **Secondary Grey**: `#5A6872` - Body text, secondary elements
+- **Secondary Off-White**: `#EFE9E1` - Backgrounds, contrast
+- **Secondary Blue**: `#4EA5D9` - Interactive elements, hover states
+
+All color combinations tested for WCAG AAA compliance (7:1+ contrast ratio).
+
+## ♿ Accessibility Features
+
+- **WCAG AAA Compliant**: Highest level of web accessibility
+- **Keyboard Navigation**: Full keyboard support with visible focus indicators
+- **Skip Navigation**: Skip to main content link for screen reader users
+- **ARIA Landmarks**: Proper semantic HTML5 structure
+- **Screen Reader Support**: Comprehensive ARIA labels and semantic markup
+- **Color Contrast**: Minimum 7:1 ratio for normal text, 4.5:1 for large text
+- **Reduced Motion**: Respects user's motion preferences
+- **Touch Targets**: Minimum 44x44px for all interactive elements
+- **Focus Management**: Proper focus handling for modals and menus
+
+## 📦 Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/DeanWaringDev/deanwaringdev.git
+
+# Navigate to project directory
+cd deanwaringdev
+
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔧 Development
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Development server
+npm run dev
 
-## Learn More
+# Build for production
+npm run build
 
-To learn more about Next.js, take a look at the following resources:
+# Start production server
+npm start
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Run linting
+npm run lint
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Project Structure
 
-## Deploy on Vercel
+```
+deanwaringdev/
+├── app/                    # Next.js app directory
+│   ├── layout.tsx         # Root layout with accessibility features
+│   ├── page.tsx           # Homepage
+│   ├── globals.css        # Global styles with WCAG compliance
+│   └── [routes]/          # Additional pages
+├── components/            # Reusable React components
+│   ├── Header.tsx        # Navigation with mobile menu
+│   └── Footer.tsx        # Footer with links and social
+├── public/               # Static assets
+└── package.json          # Dependencies and scripts
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌐 Deployment on Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This site is optimized for deployment on Vercel:
+
+### Quick Deploy Steps:
+
+1. **Push to GitHub** (already done ✅)
+2. **Import Project in Vercel**:
+   - Go to [vercel.com](https://vercel.com)
+   - Click "Add New Project"
+   - Import your `deanwaringdev` repository
+3. **Configure Project**:
+   - Framework Preset: Next.js (auto-detected)
+   - Build Command: `npm run build` (default)
+   - Output Directory: `.next` (default)
+4. **Add Environment Variables** (optional):
+   ```
+   NEXT_PUBLIC_SITE_URL=https://deanwaringdev.com
+   NEXT_PUBLIC_SITE_NAME=DeanWaringDev
+   ```
+5. **Deploy**: Click "Deploy" and Vercel handles the rest!
+6. **Custom Domain**: Add `deanwaringdev.com` in Project Settings → Domains
+
+### Automatic Deployments:
+
+- **Production**: Pushes to `main` branch deploy to production
+- **Preview**: Pull requests create preview deployments
+- **Rollback**: One-click rollback in Vercel dashboard
+
+## 📝 Code Standards
+
+- **Comments**: Comprehensive JSDoc-style comments on all components
+- **TypeScript**: Strict type checking enabled
+- **Accessibility**: Every feature built with a11y in mind
+- **Semantic HTML**: Proper use of HTML5 elements
+- **Clean Code**: Readable, maintainable, well-structured
+
+## 🎓 Portfolio Projects Featured
+
+- **GCSEFastTrack** - English language learning platform
+- **Childminding Management** - Complete childminding management system
+- **WheelchairRacer** - UK running events platform for wheelchair athletes
+
+## 📄 License
+
+© 2026 DeanWaringDev. All rights reserved.
+
+## 🤝 Contact
+
+- **Email**: hello@deanwaringdev.com
+- **GitHub**: [@DeanWaringDev](https://github.com/DeanWaringDev)
+- **Website**: [deanwaringdev.com](https://deanwaringdev.com)
+
+---
+
+**Built with accessibility, quality, and professionalism in mind.**

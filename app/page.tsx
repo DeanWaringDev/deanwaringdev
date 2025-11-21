@@ -24,7 +24,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="bg-[#F97A20] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#e06a15] transition-all shadow-lg hover:shadow-xl hover:scale-105 transform"
+                className="bg-[#D15A00] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#B04D00] transition-all shadow-lg hover:shadow-xl hover:scale-105 transform"
               >
                 Start Your Project
               </Link>
@@ -64,8 +64,13 @@ export default function Home() {
                 Native and cross-platform mobile applications for iOS and Android. 
                 From concept to app store deployment.
               </p>
-              <Link href="/services#mobile" className="text-[#F97A20] font-semibold hover:underline">
-                Learn More →
+              <Link 
+                href="/services#mobile" 
+                className="text-[#D15A00] font-semibold hover:text-[#B04D00] hover:underline inline-flex items-center gap-1"
+                aria-label="Learn more about Mobile App Development services"
+              >
+                Learn More
+                <span aria-hidden="true">→</span>
               </Link>
             </div>
 
@@ -81,8 +86,13 @@ export default function Home() {
                 Modern, responsive web applications built with cutting-edge technologies. 
                 Fast, secure, and scalable solutions.
               </p>
-              <Link href="/services#web" className="text-[#F97A20] font-semibold hover:underline">
-                Learn More →
+              <Link 
+                href="/services#web" 
+                className="text-[#D15A00] font-semibold hover:text-[#B04D00] hover:underline inline-flex items-center gap-1"
+                aria-label="Learn more about Web Application services"
+              >
+                Learn More
+                <span aria-hidden="true">→</span>
               </Link>
             </div>
 
@@ -99,8 +109,13 @@ export default function Home() {
                 Tailored software solutions designed specifically for your unique business requirements 
                 and workflows.
               </p>
-              <Link href="/services#custom" className="text-[#F97A20] font-semibold hover:underline">
-                Learn More →
+              <Link 
+                href="/services#custom" 
+                className="text-[#D15A00] font-semibold hover:text-[#B04D00] hover:underline inline-flex items-center gap-1"
+                aria-label="Learn more about Custom Software Solutions"
+              >
+                Learn More
+                <span aria-hidden="true">→</span>
               </Link>
             </div>
           </div>
@@ -133,8 +148,13 @@ export default function Home() {
                   <span className="bg-[#EFE9E1] text-[#0B1D39] px-3 py-1 rounded-full text-sm font-medium">Education</span>
                   <span className="bg-[#EFE9E1] text-[#0B1D39] px-3 py-1 rounded-full text-sm font-medium">Web App</span>
                 </div>
-                <Link href="/portfolio#gcse" className="text-[#F97A20] font-semibold hover:underline">
-                  View Case Study →
+                <Link 
+                  href="/portfolio#gcse" 
+                  className="text-[#D15A00] font-semibold hover:text-[#B04D00] hover:underline inline-flex items-center gap-1"
+                  aria-label="View GCSEFastTrack case study"
+                >
+                  View Case Study
+                  <span aria-hidden="true">→</span>
                 </Link>
               </div>
             </div>
@@ -152,8 +172,13 @@ export default function Home() {
                   <span className="bg-[#EFE9E1] text-[#0B1D39] px-3 py-1 rounded-full text-sm font-medium">SaaS</span>
                   <span className="bg-[#EFE9E1] text-[#0B1D39] px-3 py-1 rounded-full text-sm font-medium">Mobile App</span>
                 </div>
-                <Link href="/portfolio#childminding" className="text-[#F97A20] font-semibold hover:underline">
-                  View Case Study →
+                <Link 
+                  href="/portfolio#childminding" 
+                  className="text-[#D15A00] font-semibold hover:text-[#B04D00] hover:underline inline-flex items-center gap-1"
+                  aria-label="View Childminding Management case study"
+                >
+                  View Case Study
+                  <span aria-hidden="true">→</span>
                 </Link>
               </div>
             </div>
@@ -171,8 +196,13 @@ export default function Home() {
                   <span className="bg-[#EFE9E1] text-[#0B1D39] px-3 py-1 rounded-full text-sm font-medium">Sports</span>
                   <span className="bg-[#EFE9E1] text-[#0B1D39] px-3 py-1 rounded-full text-sm font-medium">Web Platform</span>
                 </div>
-                <Link href="/portfolio#wheelchairracer" className="text-[#F97A20] font-semibold hover:underline">
-                  View Case Study →
+                <Link 
+                  href="/portfolio#wheelchairracer" 
+                  className="text-[#D15A00] font-semibold hover:text-[#B04D00] hover:underline inline-flex items-center gap-1"
+                  aria-label="View WheelchairRacer case study"
+                >
+                  View Case Study
+                  <span aria-hidden="true">→</span>
                 </Link>
               </div>
             </div>
@@ -264,7 +294,7 @@ export default function Home() {
           </p>
           <Link
             href="/contact"
-            className="inline-block bg-[#F97A20] text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-[#e06a15] transition-all shadow-lg hover:shadow-xl hover:scale-105 transform"
+            className="inline-block bg-[#D15A00] text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-[#B04D00] transition-all shadow-lg hover:shadow-xl hover:scale-105 transform"
           >
             Get in Touch
           </Link>

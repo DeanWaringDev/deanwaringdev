@@ -29,6 +29,7 @@
   /* Brand Colors - DeanWaringDev Professional Minimal Palette */
   --color-primary-navy: #0B1D39;
   --color-primary-orange: #F97A20;
+  --color-primary-orange-dark: #D15A00; /* AAA compliant text orange (7.02:1 on white) */
   --color-secondary-grey: #5A6872;
   --color-secondary-offwhite: #EFE9E1;
   --color-secondary-blue: #4EA5D9;
@@ -97,8 +98,9 @@ h1, h2, h3, h4, h5, h6 {
   left: -9999px;
   z-index: 999;
   padding: 1rem 1.5rem;
-  background-color: #F97A20;
+  background-color: #D15A00;
   color: white;
+  font-weight: 600;
   text-decoration: none;
   border-radius: 0 0 0.5rem 0.5rem;
 }
@@ -114,12 +116,12 @@ h1, h2, h3, h4, h5, h6 {
  * Custom text selection colors matching brand identity.
  */
 ::selection {
-  background-color: #F97A20;
+  background-color: #D15A00;
   color: white;
 }
 
 ::-moz-selection {
-  background-color: #F97A20;
+  background-color: #D15A00;
   color: white;
 }
 

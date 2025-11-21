@@ -97,39 +97,50 @@ export default function Header() {
             - Hidden on mobile (md:flex shows on medium screens and up)
             - Horizontal layout with consistent spacing
             - CTA button visually distinct from regular links
+            - Proper list structure for semantic HTML
           */}
-          <div className="hidden md:flex items-center space-x-8">
-            <Link 
-              href="/" 
-              className="hover:text-[#F97A20] transition-colors font-medium"
-            >
-              Home
-            </Link>
-            <Link 
-              href="/services" 
-              className="hover:text-[#F97A20] transition-colors font-medium"
-            >
-              Services
-            </Link>
-            <Link 
-              href="/portfolio" 
-              className="hover:text-[#F97A20] transition-colors font-medium"
-            >
-              Portfolio
-            </Link>
-            <Link 
-              href="/about" 
-              className="hover:text-[#F97A20] transition-colors font-medium"
-            >
-              About
-            </Link>
-            <Link 
-              href="/contact" 
-              className="bg-[#F97A20] text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-[#e06a15] transition-colors shadow-md hover:shadow-lg"
-            >
-              Get Started
-            </Link>
-          </div>
+          <ul className="hidden md:flex items-center space-x-8 list-none">
+            <li>
+              <Link 
+                href="/" 
+                className="hover:text-[#F97A20] transition-colors font-medium"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link 
+                href="/services" 
+                className="hover:text-[#F97A20] transition-colors font-medium"
+              >
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link 
+                href="/portfolio" 
+                className="hover:text-[#F97A20] transition-colors font-medium"
+              >
+                Portfolio
+              </Link>
+            </li>
+            <li>
+              <Link 
+                href="/about" 
+                className="hover:text-[#F97A20] transition-colors font-medium"
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link 
+                href="/contact" 
+                className="bg-[#F97A20] text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-[#e06a15] transition-colors shadow-md hover:shadow-lg"
+              >
+                Get Started
+              </Link>
+            </li>
+          </ul>
 
           {/* 
             Mobile Menu Toggle Button
@@ -182,49 +193,60 @@ export default function Header() {
           - Proper ARIA attributes for accessibility
         */}
         {mobileMenuOpen && (
-          <div 
+          <nav 
             ref={mobileMenuRef}
             id="mobile-menu"
-            className="md:hidden pb-4 space-y-3"
-            role="navigation"
+            className="md:hidden pb-4"
             aria-label="Mobile navigation"
           >
-            <Link
-              href="/"
-              className="block py-3 px-2 hover:text-[#F97A20] hover:bg-[#1a3354] rounded transition-colors"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Home
-            </Link>
-            <Link
-              href="/services"
-              className="block py-3 px-2 hover:text-[#F97A20] hover:bg-[#1a3354] rounded transition-colors"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Services
-            </Link>
-            <Link
-              href="/portfolio"
-              className="block py-3 px-2 hover:text-[#F97A20] hover:bg-[#1a3354] rounded transition-colors"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Portfolio
-            </Link>
-            <Link
-              href="/about"
-              className="block py-3 px-2 hover:text-[#F97A20] hover:bg-[#1a3354] rounded transition-colors"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              About
-            </Link>
-            <Link
-              href="/contact"
-              className="block bg-[#F97A20] text-white px-6 py-3 rounded-lg font-semibold text-center hover:bg-[#e06a15] transition-colors mt-2"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Get Started
-            </Link>
-          </div>
+            <ul className="space-y-3 list-none">
+              <li>
+                <Link
+                  href="/"
+                  className="block py-3 px-2 hover:text-[#F97A20] hover:bg-[#1a3354] rounded transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services"
+                  className="block py-3 px-2 hover:text-[#F97A20] hover:bg-[#1a3354] rounded transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/portfolio"
+                  className="block py-3 px-2 hover:text-[#F97A20] hover:bg-[#1a3354] rounded transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Portfolio
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about"
+                  className="block py-3 px-2 hover:text-[#F97A20] hover:bg-[#1a3354] rounded transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="block bg-[#F97A20] text-white px-6 py-3 rounded-lg font-semibold text-center hover:bg-[#e06a15] transition-colors mt-2"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Get Started
+                </Link>
+              </li>
+            </ul>
+          </nav>
         )}
       </nav>
     </header>
